@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="All.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+<script src="All.js"></script>
+<style>
+    body {
+        font-family: 'Yomogi', cursive;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="../img/Banner.png" alt="">
+        </div>
+        <div class="name">
+            <div class="logo"></div>
+            <h1>Ming Phạm</h1>
+            <div class="dropdown">
+                <button onclick="getId()" class="dropBtn search" id="search"></button>
+                <div id="dropdownSearch" class="dropdownSearch">
+                    <div class="callendarName"><p>Filter by month</p></div>
+                    <div class="year">
+                    <div class="circle"></div>
+                    <p></p>
+                    <div class="circle"></div>
+                </div>
+                    <div id="btnContainer">
+                        <button class="btn clrBtn active" onclick="filterSelection('clear'); noti()"><p>Clear</p></button>
+                        <div class="monthBtn">
+                            <button class="btn" onclick="filterSelection('jan'); noti()""><p>1</p></button>
+                            <button class="btn" onclick="filterSelection('feb'); noti()""><p>2</p></button>
+                            <button class="btn" onclick="filterSelection('mar'); noti()""><p>3</p></button>
+                            <button class="btn" onclick="filterSelection('apr'); noti()""><p>4</p></button>
+                            <button class="btn" onclick="filterSelection('may'); noti()""><p>5</p></button>
+                            <button class="btn" onclick="filterSelection('jun'); noti()""><p>6</p></button>
+                            <button class="btn" onclick="filterSelection('jul'); noti()""><p>7</p></button>
+                            <button class="btn" onclick="filterSelection('aug'); noti()""><p>8</p></button>
+                            <button class="btn" onclick="filterSelection('sep'); noti()""><p>9</p></button>
+                            <button class="btn" onclick="filterSelection('oct'); noti()""><p>10</p></button>
+                            <button class="btn" onclick="filterSelection('nov'); noti()""><p>11</p></button>
+                            <button class="btn" onclick="filterSelection('dec'); noti()""><p>12</p></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="navContainer">
+            <nav class="navBar">
+                <ul>
+                <li><a href="../Home/Home.html">
+                    <div class="navButtons home"><img src="../img/home.png" alt="Home"></div>
+                </a></li>
+                <li><a href="../Albums/Albums.html">
+                    <div class="navButtons albums"><img src="../img/pictures.png" alt="Albums"></div>
+                </a></li>
+                <li><a href="../Videos/Videos.html">
+                    <div class="navButtons videos"><img src="../img/videos.png" alt="Videos"></div>
+                </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sidebar">
+            <a href="https://www.tiktok.com/@ohmynhg0d?lang=vi-VN" class="socialButtons tikTok"></a>
+            <a href="https://youtube.com/channel/UCiqDlH-5yaidg8GCqEQ2RlQ" class="socialButtons youtube"></a>
+            <a href="https://www.facebook.com/charminhh/" class="socialButtons facebook"> </a>
+            <a href="https://www.instagram.com/minh_loveswomen/" class="socialButtons instagram"></a>
+            <a href="https://forms.gle/3HHRMp7J6ST13yBw8" class="socialButtons gmail"></a>
+        </div>
+        
+    </header>
+    <div class="page">
+    <div class="posts">
+        <a href="../indiv pics/phim6.html" class="post show pic dec" id="phim6"></a>
+        <a href="../indiv pics/phim5.html" class="post show pic dec" id="phim5"></a>
+        <a href="../indiv pics/phim4.html" class="post show pic dec" id="phim4"></a>
+        <a href="../indiv pics/phim3.html" class="post show pic dec" id="phim3"></a>
+        <a href="../indiv pics/phim2.html" class="post show pic dec" id="phim2"></a>
+        <a href="../indiv pics/phim1.html" class="post show pic dec" id="phim1"></a>
+
+        <a href="../indiv pics/giay2.html" class="post show pic nov" id="giay2"></a>
+        <a href="../indiv pics/giay1.html" class="post show pic nov" id="giay1"></a>
+
+        <a href="../indiv pics/jump4.html" class="post show pic oct" id="jump4"></a>
+        <a href="../indiv pics/jump3.html" class="post show pic oct" id="jump3"></a>
+        <a href="../indiv pics/jump2.html" class="post show pic oct" id="jump2"></a>
+        <a href="../indiv pics/jump1.html" class="post show pic oct" id="jump1"></a>
+
+        <a href="../indiv pics/game6.html" class="post show pic sep" id="game6"></a>
+        <a href="../indiv pics/game5.html" class="post show pic sep" id="game5"></a>
+        <a href="../indiv pics/game4.html" class="post show pic sep" id="game4"></a>
+        <a href="../indiv pics/game3.html" class="post show pic sep" id="game3"></a>
+        <a href="../indiv pics/game2.html" class="post show pic sep" id="game2"></a>
+        <a href="../indiv pics/game1.html" class="post show pic sep" id="game1"></a>
+
+        <a href="../indiv pics/br3.html" class="post show pic aug" id="br3"></a>
+        <a href="../indiv pics/br2.html" class="post show pic aug" id="br2"></a>
+        <a href="../indiv pics/br1.html" class="post show pic aug" id="br1"></a>
+
+        <a href="../indiv pics/in6.html" class="post show pic jul" id="in6"></a>
+        <a href="../indiv pics/in5.html" class="post show pic jul" id="in5"></a>
+        <a href="../indiv pics/in4.html" class="post show pic jul" id="in4"></a>
+        <a href="../indiv pics/in3.html" class="post show pic jul" id="in3"></a>
+        <a href="../indiv pics/in2.html" class="post show pic jul" id="in2"></a>
+        <a href="../indiv pics/in1.html" class="post show pic jul" id="in1"></a>
+
+        <a href="../indiv pics/music3.html" class="post show pic jun" id="music3"></a>
+        <a href="../indiv pics/music2.html" class="post show pic jun" id="music2"></a>
+        <a href="../indiv pics/music1.html" class="post show pic jun" id="music1"></a>
+
+        <p id="noti">Không có ảnh nào trong thời gian này :(</p>
+    </div>
+    </div>
+    <button class="toTop" onclick="toTopFunction()" id="toTop"></button>
+</body>
+
+</html>
